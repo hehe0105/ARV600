@@ -24,6 +24,9 @@ public class Collect : MonoBehaviour
             score++;
             ui.text = "Coins Collected: "+score+"/10";
             Destroy(other.gameObject);
+            if (score==10) {
+                ui.text = "Congratulations! You win!";
+            }
         }
     }
 }
